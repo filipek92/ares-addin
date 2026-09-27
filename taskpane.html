@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ARES lookup</title>
+  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+  <link rel="stylesheet" href="taskpane.css">
+</head>
+<body>
+  <header>
+    <form id="manual">
+      <input id="manualIco" inputmode="numeric" maxlength="10" placeholder="IČO ručně">
+      <button type="submit">Hledat</button>
+    </form>
+  </header>
+  <p id="status" class="muted">Načítám e-mail…</p>
+  <main id="results"></main>
+  <script src="taskpane.js"></script>
+</body>
+</html>
