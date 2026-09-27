@@ -5,7 +5,7 @@
            xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0"
            xsi:type="MailApp">
   <Id>e62f3fd3-dad2-43bb-aba6-780a00b07322</Id>
-  <Version>1.0.1.0</Version>
+  <Version>1.0.2.0</Version>
   <ProviderName>Filip Richter</ProviderName>
   <DefaultLocale>cs-CZ</DefaultLocale>
   <DisplayName DefaultValue="ARES lookup"/>
@@ -46,6 +46,7 @@
     <Hosts>
       <Host xsi:type="MailHost">
         <DesktopFormFactor>
+          <FunctionFile resid="CommandsUrl"/>
           <ExtensionPoint xsi:type="MessageReadCommandSurface">
             <OfficeTab id="TabDefault">
               <Group id="aresGroup">
@@ -79,6 +80,7 @@
         <bt:Image id="Icon80" DefaultValue="https://filipek92.github.io/ares-addin/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
+        <bt:Url id="CommandsUrl" DefaultValue="https://filipek92.github.io/ares-addin/commands.html"/>
         <bt:Url id="TaskpaneUrl" DefaultValue="https://filipek92.github.io/ares-addin/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
